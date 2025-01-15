@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Function prototypes
 void addition();
 void subtraction();
 void multiplication();
@@ -10,7 +9,6 @@ int main() {
     int choice;
 
     do {
-        // Display the menu
         printf("\nMenu:\n");
         printf("1. Addition\n");
         printf("2. Subtraction\n");
@@ -20,7 +18,6 @@ int main() {
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
-        // Call the appropriate function based on the choice
         switch (choice) {
             case 1:
                 addition();
@@ -45,7 +42,6 @@ int main() {
     return 0;
 }
 
-// Function for addition
 void addition() {
     double num1, num2;
     printf("Enter two numbers: ");
@@ -53,7 +49,6 @@ void addition() {
     printf("Result: %.2lf\n", num1 + num2);
 }
 
-// Function for subtraction
 void subtraction() {
     double num1, num2;
     printf("Enter two numbers: ");
@@ -61,7 +56,6 @@ void subtraction() {
     printf("Result: %.2lf\n", num1 - num2);
 }
 
-// Function for multiplication
 void multiplication() {
     double num1, num2;
     printf("Enter two numbers: ");
@@ -69,7 +63,6 @@ void multiplication() {
     printf("Result: %.2lf\n", num1 * num2);
 }
 
-// Function for division
 void division() {
     double num1, num2;
     printf("Enter two numbers: ");
